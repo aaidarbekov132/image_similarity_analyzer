@@ -1,5 +1,5 @@
 name: image_similarity_analyzer
-description: "A Flutter plugin to analyze similarity between images using native iOS code."
+description: "A Flutter plugin to analyze similarity between images using native iOS and Android code."
 version: 0.0.1
 homepage: https://github.com/aaidarbekov132/image_similarity_analyzer.git
 
@@ -23,5 +23,8 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
+      android:
+        package: com.example.image_similarity_analyzer
+        pluginClass: ImageSimilarityAnalyzerPlugin
       ios:
         pluginClass: ImageSimilarityAnalyzerPlugin
